@@ -26,7 +26,7 @@ if (missingEnvVars.length > 0) {
 const jiraClient = new JiraClient({
   host: process.env.JIRA_HOST,
   username: process.env.JIRA_USERNAME,
-  password: process.env.JIRA_PASSWORD,  // using password instead of token
+  password: process.env.JIRA_ACCESS_TOKEN,
   protocol: 'https',
   apiVersion: '2',
   strictSSL: true
